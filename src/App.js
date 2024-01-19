@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Navbar } from "./components/Navbar";
+import Header from "./components/Header";
+import Body from "./components/Body";
+import { ProductContextProvider } from "./context/productContext";
+import ProductModal from "./components/ProductsModal";
+import { Box } from "@mui/material";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <ProductContextProvider>
+      <Box sx={{ backgroundColor: "#F1F1F2" }}>
+        <Box
+          sx={{
+            padding: {
+              xl: "2rem 3rem",
+            },
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <ProductModal showModal={showModal} setShowModal={setShowModal} />
+          <Navbar setShowModal={setShowModal} />
+          <Header />
+          <Body />
+        </Box>
+      </Box>
+    </ProductContextProvider>
   );
 }
 
