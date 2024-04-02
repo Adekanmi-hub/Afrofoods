@@ -5,6 +5,7 @@ import Body from "./components/Body";
 import { ProductContextProvider } from "./context/productContext";
 import ProductModal from "./components/ProductsModal";
 import { Box } from "@mui/material";
+import Footer from "./components/Footer";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -23,6 +24,7 @@ function App() {
           <Header />
           <Body />
         </Box>
+        <Footer />
       </Box>
     </ProductContextProvider>
   );
