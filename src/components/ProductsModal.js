@@ -43,11 +43,11 @@ export const ProductModal = ({ showModal, setShowModal, props }) => {
             <FiX />
           </IconButton>
           <Box>
-            {allProducts.map((product) => {
-              if (cartItems[product.id] !== 0) {
+            {allProducts
+              .filter((product) => cartItems[product.id] !== 0)
+              .map((product) => {
                 return <CartProductModal key={props} data={product} />;
-              }
-            })}
+              })}
           </Box>
 
           {totalAmount !== 0 ? (
