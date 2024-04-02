@@ -46,7 +46,7 @@ export const ProductModal = ({ showModal, setShowModal, props }) => {
             {allProducts
               .filter((product) => cartItems[product.id] !== 0)
               .map((product) => {
-                return <CartProductModal key={props} data={product} />;
+                return <CartProductModal key={product.id} data={product} />;
               })}
           </Box>
 
