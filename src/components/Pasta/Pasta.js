@@ -26,7 +26,7 @@ const Pasta = (props) => {
     >
       <img
         src={image}
-        width="300"
+        width="270"
         height="auto"
         className="rounded-xl"
         alt=""

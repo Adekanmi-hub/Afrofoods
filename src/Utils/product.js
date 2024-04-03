@@ -116,7 +116,7 @@ export const pasta = [
   {
     id: 14,
     image: product1,
-    Name: "Indomie Onion Chicken - Super Pack",
+    Name: "Indomie Super Pack (OC)",
     Price: 100,
     Weight: "xyz kg",
   },
