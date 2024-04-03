@@ -1,17 +1,13 @@
 import { Box, Typography } from "@mui/material";
-import FlourList from "./Flour/FlourList";
-import PastaList from "./Pasta/PastaList";
-import SpicesList from "./Spices/SpicesList";
-import DrinkList from "./Drink/DrinkList";
-import OthersList from "./Others/OthersList";
+import CategoryTabs from "./CategoryTabs";
 
 export const Category = () => {
   return (
     <Box>
       <Box
         sx={{
-          marginTop: "1rem",
-          padding: "1rem",
+          marginTop: "0.5rem",
+          padding: "o.5rem",
           borderBottom: "2px solid black",
         }}
       >
@@ -25,90 +21,12 @@ export const Category = () => {
           CATEGORY
         </Typography>
       </Box>
-
-      <Box>
-        <Box
-          sx={{
-            marginTop: "2rem",
-            padding: "1rem",
-            backgroundColor: "#FF9900",
-            borderTopLeftRadius: "5px",
-            borderTopRightRadius: "5px",
-          }}
-        >
-          <Typography variant="subtitle1" fontWeight="600">
-            FLOURS
-          </Typography>
-        </Box>
-        <FlourList />
-      </Box>
-
-      <Box>
-        <Box
-          sx={{
-            marginTop: "2rem",
-            padding: "1rem",
-            backgroundColor: "#FF9900",
-            borderTopLeftRadius: "5px",
-            borderTopRightRadius: "5px",
-          }}
-        >
-          <Typography variant="subtitle1" fontWeight="600">
-            PASTA
-          </Typography>
-        </Box>
-        <PastaList />
-      </Box>
-
-      <Box>
-        <Box
-          sx={{
-            marginTop: "2rem",
-            padding: "1rem",
-            backgroundColor: "#FF9900",
-            borderTopLeftRadius: "5px",
-            borderTopRightRadius: "5px",
-          }}
-        >
-          <Typography variant="subtitle1" fontWeight="600">
-            SPICES
-          </Typography>
-        </Box>
-        <SpicesList />
-      </Box>
-
-      <Box>
-        <Box
-          sx={{
-            marginTop: "2rem",
-            padding: "1rem",
-            backgroundColor: "#FF9900",
-            borderTopLeftRadius: "5px",
-            borderTopRightRadius: "5px",
-          }}
-        >
-          <Typography variant="subtitle1" fontWeight="600">
-            DRINKS
-          </Typography>
-        </Box>
-        <DrinkList />
-      </Box>
-
-      <Box>
-        <Box
-          sx={{
-            marginTop: "2rem",
-            padding: "1rem",
-            backgroundColor: "#FF9900",
-            borderTopLeftRadius: "5px",
-            borderTopRightRadius: "5px",
-          }}
-        >
-          <Typography variant="subtitle1" fontWeight="600">
-            OTHERS
-          </Typography>
-        </Box>
-        <OthersList />
+      <Box
+        sx={{
+          mt: "0.5rem",
+        }}
+      >
+        <CategoryTabs />
       </Box>
     </Box>
   );

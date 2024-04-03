@@ -14,7 +14,7 @@ const SpicesList = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "2rem 1rem 1rem 1rem",
+          padding: "1rem 2rem 1rem 2rem",
         }}
       >
         {spices.map((products) => (
