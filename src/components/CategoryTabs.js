@@ -1,4 +1,4 @@
-import { Box, Tab, Tabs, Typography, useTheme, AppBar } from "@mui/material";
+import { Box, Tab, Tabs, useTheme, AppBar } from "@mui/material";
 import PropTypes from "prop-types";
 import React from "react";
 import SpicesList from "./Spices/SpicesList";
@@ -19,11 +19,7 @@ function TabPanel(props) {
       aria-labelledby={`full-width-tab-${index}`}
       {...other}
     >
-      {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
-      )}
+      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
     </div>
   );
 }
@@ -51,10 +47,14 @@ export const CategoryTabs = () => {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return (
     <Box sx={{ bgcolor: "background.paper", width: "100%" }}>
-      <AppBar position="static">
+      <AppBar
+        position="static"
+        sx={{
+          backgroundColor: "black",
+        }}
+      >
         <Tabs
           value={value}
           onChange={handleChange}
