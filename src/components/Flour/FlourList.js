@@ -14,7 +14,10 @@ export const FlourList = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "1rem 2rem 1rem 2rem",
+          padding: {
+            md: "0rem 0rem 1rem 0rem ",
+            lg: "1.5rem 3rem",
+          },
         }}
       >
         {flour.map((products) => (
@@ -30,7 +33,9 @@ export const FlourList = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "1rem 2rem 1rem 2rem",
+          padding: {
+            lg: "1.5rem 3rem",
+          },
         }}
       >
         {flour2.map((products) => (

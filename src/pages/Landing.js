@@ -12,13 +12,7 @@ function Landing() {
   return (
     <ProductContextProvider>
       <Box sx={{ backgroundColor: "#F1F1F2" }}>
-        <Box
-          sx={{
-            padding: {
-              xl: "2rem 3rem",
-            },
-          }}
-        >
+        <Box>
           <ProductModal showModal={showModal} setShowModal={setShowModal} />
           <Navbar setShowModal={setShowModal} />
           <Header />

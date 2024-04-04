@@ -8,18 +8,19 @@ import CartProductModal from "./CartProductModal";
 
 const style = {
   position: "absolute",
-  top: "20%",
-  left: "87%",
+  top: "50%",
+  left: "50%",
   transform: "translate(-50%, -50%)",
-  width: { xs: "75%", sm: 400, xl: "18%" },
+  width: { xs: "75%", sm: 400 },
   bgcolor: "background.paper",
   border: "0px",
   boxShadow: 24,
   p: 4,
+  height: "auto",
+  overflowx: "auto",
+  overflowY: "auto",
   outline: "none",
-  overflowX: "auto",
-  height: "20%",
-  display: "block",
+  maxHeight: "60%",
 };
 
 export const ProductModal = ({ showModal, setShowModal, props }) => {
@@ -33,7 +34,6 @@ export const ProductModal = ({ showModal, setShowModal, props }) => {
         onClose={() => setShowModal(false)}
         aria-labelledby="modal-modal-title"
         disableScrollLock
-        hideBackdrop
       >
         <Box sx={style}>
           <IconButton
@@ -42,7 +42,18 @@ export const ProductModal = ({ showModal, setShowModal, props }) => {
           >
             <FiX />
           </IconButton>
+
           <Box>
+            <Typography
+              fontFamily="inter"
+              variant="body1"
+              fontWeight="500"
+              sx={{
+                borderBottom: "2px solid black",
+              }}
+            >
+              CART ITEMS
+            </Typography>
             {allProducts
               .filter((product) => cartItems[product.id] !== 0)
               .map((product) => {
@@ -77,10 +88,11 @@ export const ProductModal = ({ showModal, setShowModal, props }) => {
               </Typography>
               <Box
                 sx={{
-                  padding: "25px 0px 0px 100px",
+                  position: "relative",
+                  left: "35%",
                 }}
               >
-                <FaCartArrowDown size={50} />
+                <FaCartArrowDown size={100} />
               </Box>
             </Box>
           )}
