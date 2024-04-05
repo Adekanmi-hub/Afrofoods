@@ -16,7 +16,8 @@ export const Navbar = ({ setShowModal }) => {
       <Box
         sx={{
           padding: {
-            md: "1rem 3rem",
+            sm: "1rem 1rem",
+            md: "1rem 1rem",
             lg: "1rem 3rem",
           },
         }}
@@ -33,6 +34,7 @@ export const Navbar = ({ setShowModal }) => {
           <Box
             sx={{
               width: {
+                sm: "22%",
                 md: "20%",
                 lg: "14%",
                 xl: "12%",
@@ -49,6 +51,10 @@ export const Navbar = ({ setShowModal }) => {
                 bottom: "0.5rem",
                 border: "1px solid #FF7801 ",
                 color: "white",
+                fontSize: {
+                  xs: "10px",
+                  md: "14px",
+                },
               }}
               onClick={() => setShowModal(true)}
             >
@@ -63,7 +69,7 @@ export const Navbar = ({ setShowModal }) => {
                 bottom: "0.5rem",
                 fontSize: {
                   xs: "10px",
-                  sm: "14px",
+                  md: "14px",
                 },
                 color: "white",
                 backgroundColor: "#FF7801",
