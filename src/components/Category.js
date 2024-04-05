@@ -18,7 +18,10 @@ export const Category = () => {
               md: "h5",
             },
             fontWeight: {
-              sm: "700",
+              sm: "600",
+              md: "700",
+              lg: "700",
+              xl: "700",
             },
             fontFamily: "inter",
           }}

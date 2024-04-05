@@ -15,8 +15,10 @@ export const FlourList = () => {
           display: "flex",
           justifyContent: "space-between",
           padding: {
+            sm: "0rem 0rem 1rem 0rem",
             md: "0rem 0rem 1rem 0rem ",
-            lg: "1.5rem 3rem",
+            lg: "1.5rem 2rem",
+            xl: "1.5rem 3rem",
           },
         }}
       >
@@ -34,7 +36,10 @@ export const FlourList = () => {
           display: "flex",
           justifyContent: "space-between",
           padding: {
-            lg: "1.5rem 3rem",
+            sm: "0rem 0rem 1rem 0rem",
+            md: "0rem 0rem 1rem 0rem ",
+            lg: "1.5rem 2rem",
+            xl: "1.5rem 3rem",
           },
         }}
       >
