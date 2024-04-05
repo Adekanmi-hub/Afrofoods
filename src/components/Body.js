@@ -7,6 +7,7 @@ const Body = () => {
     <Box
       sx={{
         padding: {
+          sm: "0rem 1rem 3rem 1rem",
           md: "0rem 1rem 3rem 1rem",
           lg: "0rem 3rem 3rem 3rem",
         },

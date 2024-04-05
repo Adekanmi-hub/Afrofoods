@@ -10,11 +10,17 @@ export const Category = () => {
         }}
       >
         <Typography
-          variant="h5"
-          fontWeight="700"
           sx={{
             textAlign: "center",
             pb: "1rem",
+            typography: {
+              sm: "h5",
+              md: "h5",
+            },
+            fontWeight: {
+              sm: "700",
+            },
+            fontFamily: "inter",
           }}
         >
           CATEGORY

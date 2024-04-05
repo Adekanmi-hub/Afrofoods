@@ -17,7 +17,6 @@ const style = {
   boxShadow: 24,
   p: 4,
   height: "auto",
-  overflowx: "auto",
   overflowY: "auto",
   outline: "none",
   maxHeight: "60%",
@@ -88,8 +87,7 @@ export const ProductModal = ({ showModal, setShowModal, props }) => {
               </Typography>
               <Box
                 sx={{
-                  position: "relative",
-                  left: "35%",
+                  ml: "35%",
                 }}
               >
                 <FaCartArrowDown size={100} />

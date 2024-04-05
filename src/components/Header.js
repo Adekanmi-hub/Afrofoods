@@ -6,6 +6,7 @@ const Header = () => {
     <Box
       sx={{
         padding: {
+          sm: "5rem 1rem 1rem 1rem",
           md: "3rem 1rem 1rem 1rem",
           lg: "2rem 3rem 1rem 3rem",
         },
