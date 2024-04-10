@@ -26,8 +26,9 @@ const Flour2 = (props) => {
     >
       <img
         src={image}
+        width="100%"
         height="auto"
-        className="md:w-32 lg:w-44 xl:w-56 2xl:w-64 rounded-xl"
+        className=" rounded-xl"
         alt=""
       />
       <Box

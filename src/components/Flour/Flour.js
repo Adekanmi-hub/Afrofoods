@@ -26,13 +26,15 @@ const Flour = (props) => {
       >
         <img
           src={image}
+          width="100%"
           height="auto"
-          className="md:w-32 lg:w-44 xl:w-56 2xl:w-64 rounded-xl"
+          className=" rounded-xl"
           alt=""
         />
         <Box
           sx={{
             padding: {
+              xs: "0.4rem 0.2rem",
               sm: "0.4rem 0.2rem",
               md: "0.5rem",
             },
@@ -46,13 +48,9 @@ const Flour = (props) => {
                 lg: "body1",
                 xl: "body1",
               },
-              fontSize: {
-                sm: 11,
-              },
               fontWeight: {
-                xs: "600",
+                xs: "500",
                 md: "500",
-                sm: "500",
               },
             }}
           >

@@ -15,6 +15,7 @@ const Header = () => {
       <Box
         sx={{
           padding: {
+            xs: "5rem 0rem 2rem",
             sm: "2rem 0rem",
             md: "2rem 0rem",
             lg: "3rem 0rem",
@@ -36,6 +37,7 @@ const Header = () => {
           sx={{
             marginTop: "1rem",
             paddingX: {
+              xs: "1rem",
               sm: "1rem",
               md: 0,
             },

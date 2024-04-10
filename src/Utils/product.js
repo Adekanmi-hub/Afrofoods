@@ -42,10 +42,6 @@ export const flour = [
     Price: 100,
     Weight: "xyz kg",
   },
-];
-
-//This is the second row of products
-export const flour2 = [
   {
     id: 6,
     image: product1,
@@ -86,6 +82,11 @@ export const flour2 = [
     Weight: "xyz kg",
   },
 ];
+
+// //This is the second row of products
+// export const flour2 = [
+
+// ];
 
 //This is the third row of products
 export const pasta = [
@@ -265,6 +266,5 @@ export const allProducts = [
   ...drinks,
   ...spices,
   ...others,
-  ...flour2,
   ...pasta,
 ];

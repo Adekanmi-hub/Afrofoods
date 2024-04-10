@@ -16,8 +16,8 @@ export const Navbar = ({ setShowModal }) => {
       <Box
         sx={{
           padding: {
+            xs: "1rem",
             sm: "1rem 1rem",
-            md: "1rem 1rem",
             lg: "1rem 3rem",
           },
         }}
@@ -34,10 +34,15 @@ export const Navbar = ({ setShowModal }) => {
           <Box
             sx={{
               width: {
+                xs: "40%",
                 sm: "22%",
                 md: "20%",
                 lg: "14%",
                 xl: "12%",
+              },
+              mt: {
+                xs: "0.5rem",
+                sm: 0,
               },
             }}
             display="flex"

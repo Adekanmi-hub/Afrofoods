@@ -14,10 +14,12 @@ export const Category = () => {
             textAlign: "center",
             pb: "1rem",
             typography: {
+              xs: "h6",
               sm: "h5",
               md: "h5",
             },
             fontWeight: {
+              xs: "600",
               sm: "600",
               md: "700",
               lg: "700",
