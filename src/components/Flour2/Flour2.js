@@ -26,24 +26,60 @@ const Flour2 = (props) => {
     >
       <img
         src={image}
-        width="270"
+        width="100%"
         height="auto"
-        className="lg:w-44 xl:w-56 2xl:w-64 rounded-xl"
+        className=" rounded-xl"
         alt=""
       />
       <Box
         sx={{
-          padding: "0.5rem",
+          padding: {
+            sm: "0.4rem 0.2rem",
+            md: "0.5rem",
+          },
         }}
       >
-        <Typography variant="body2" fontWeight="600">
+        <Typography
+          sx={{
+            typography: {
+              xs: "body2",
+              md: "body2",
+              lg: "body1",
+              xl: "body1",
+            },
+            fontSize: {
+              sm: 11,
+            },
+            fontWeight: {
+              xs: "600",
+              md: "500",
+              sm: "500",
+            },
+          }}
+        >
           {Name}
         </Typography>
-        <Typography variant="body2" color="#1A76D2">
+        <Typography
+          color="#1A76D2"
+          sx={{
+            typography: {
+              xs: "body2",
+              md: "body2",
+              lg: "body1",
+              xl: "h6",
+            },
+            fontWeight: {
+              xs: "600",
+              md: "500",
+              sm: "700",
+            },
+          }}
+        >
           ${Price}
         </Typography>
         <Button
           size="small"
+          fullWidth
           variant="contained"
           onClick={() => {
             addToCart(id);
@@ -59,16 +95,19 @@ const Flour2 = (props) => {
           sx={{
             textDecoration: "none",
             mt: "1rem",
-            fontSize: {
-              xs: "10px",
-              sm: "14px",
-              md: "10px",
-              lg: "14px",
-            },
             color: "white",
             backgroundColor: "#FF7801",
             "&:hover": {
               backgroundColor: "black",
+            },
+            typography: {
+              xs: "body2",
+              md: "body2",
+              lg: "body1",
+              xl: "body1",
+            },
+            fontSize: {
+              sm: 11,
             },
           }}
         >

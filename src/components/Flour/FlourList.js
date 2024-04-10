@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
-import { flour, flour2 } from "../../Utils/product";
+import { flour } from "../../Utils/product";
 import Flour from "./Flour";
-import Flour2 from "../Flour2/Flour2";
 
 export const FlourList = () => {
   return (
@@ -12,11 +11,19 @@ export const FlourList = () => {
     >
       <Box
         sx={{
-          display: "flex",
-          justifyContent: "space-between",
+          display: "grid",
+          columnGap: 1,
+          rowGap: 2,
+          gridTemplateColumns: {
+            xs: "repeat(2, 1fr)",
+            sm: "repeat(3, 1fr)",
+            md: "repeat(5, 1fr)",
+          },
           padding: {
+            sm: "0rem 0rem 1rem 0rem",
             md: "0rem 0rem 1rem 0rem ",
-            lg: "1.5rem 3rem",
+            lg: "1.5rem 2rem",
+            xl: "1.5rem 3rem",
           },
         }}
       >
@@ -24,24 +31,6 @@ export const FlourList = () => {
           <Box key={products.id}>
             {/* FIRST ITEM CONTAINER */}
             <Flour data={products} />
-          </Box>
-        ))}
-      </Box>
-
-      {/* SECOND PRODUCT ROW CONTAINER */}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: {
-            lg: "1.5rem 3rem",
-          },
-        }}
-      >
-        {flour2.map((products) => (
-          <Box key={products.id}>
-            {/* FIRST ITEM CONTAINER */}
-            <Flour2 data={products} />
           </Box>
         ))}
       </Box>

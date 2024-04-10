@@ -6,7 +6,7 @@ const Header = () => {
     <Box
       sx={{
         padding: {
-          sm: "5rem 1rem 1rem 1rem",
+          sm: "3rem 0rem 1rem 0rem",
           md: "3rem 1rem 1rem 1rem",
           lg: "2rem 3rem 1rem 3rem",
         },
@@ -15,6 +15,8 @@ const Header = () => {
       <Box
         sx={{
           padding: {
+            xs: "5rem 0rem 2rem",
+            sm: "2rem 0rem",
             md: "2rem 0rem",
             lg: "3rem 0rem",
           },
@@ -34,6 +36,11 @@ const Header = () => {
         <Box
           sx={{
             marginTop: "1rem",
+            paddingX: {
+              xs: "1rem",
+              sm: "1rem",
+              md: 0,
+            },
           }}
         >
           <img
@@ -41,7 +48,7 @@ const Header = () => {
             height="auto"
             src={require("../assets/hpbg.jpg")}
             alt=""
-            className="rounded-xl opacity-90"
+            className=" md:rounded-xl rounded-xl opacity-90"
           />
         </Box>
       </Box>

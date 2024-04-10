@@ -25,7 +25,6 @@ const style = {
 export const ProductModal = ({ showModal, setShowModal, props }) => {
   const { cartItems, getTotalCartAmount } = useContext(productContext);
   const totalAmount = getTotalCartAmount();
-
   return (
     <Box>
       <Modal
@@ -87,10 +86,13 @@ export const ProductModal = ({ showModal, setShowModal, props }) => {
               </Typography>
               <Box
                 sx={{
-                  ml: "35%",
+                  ml: {
+                    xs: "30%",
+                    sm: "35%",
+                  },
                 }}
               >
-                <FaCartArrowDown size={100} />
+                <FaCartArrowDown size={90} />
               </Box>
             </Box>
           )}
