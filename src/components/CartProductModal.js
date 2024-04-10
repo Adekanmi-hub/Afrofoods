@@ -66,7 +66,8 @@ const CartProductModal = (props) => {
                 xs: "0.5rem",
                 sm: "0.7rem",
                 md: "1.2rem",
-                lg: 0,
+                lg: "1rem",
+                xl: "0.8rem",
               },
             }}
           >
@@ -120,6 +121,7 @@ const CartProductModal = (props) => {
               xs: "35%",
               sm: "30%",
               md: "35%",
+              xl: "30%",
             },
           }}
         >
