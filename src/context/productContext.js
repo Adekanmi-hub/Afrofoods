@@ -3,6 +3,8 @@ import { allProducts } from "../Utils/product";
 
 export const productContext = createContext(null);
 
+//This loops for the number of time a product is selected by the client. The default cart[i] = 0
+//The reason is because this
 const getDefaultCart = () => {
   let cart = {};
   for (let i = 1; i < allProducts.length + 1; i++) {
@@ -13,8 +15,9 @@ const getDefaultCart = () => {
 
 const retrievedCart = () => {
   const newItem = localStorage.getItem("cartItems");
-  return newItem ? JSON.parse(newItem) : getDefaultCart;
+  return newItem ? JSON.parse(newItem) : {};
 };
+
 export const ProductContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(retrievedCart);
 
