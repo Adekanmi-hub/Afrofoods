@@ -15,7 +15,7 @@ const getDefaultCart = () => {
 
 const retrievedCart = () => {
   const newItem = localStorage.getItem("cartItems");
-  return newItem ? JSON.parse(newItem) : {};
+  return newItem ? JSON.parse(newItem) : getDefaultCart();
 };
 
 export const ProductContextProvider = (props) => {
