@@ -14,7 +14,7 @@ const getDefaultCart = () => {
 
 const retrievedCart = () => {
   let newItem = localStorage.getItem("cartItems");
-  if (!newItem) {
+  if (!newItem || newItem === "undefined") {
     //----------> if no item in the cart
     newItem = getDefaultCart();
     return newItem;
